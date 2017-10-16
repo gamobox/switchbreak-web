@@ -1,0 +1,6 @@
+export const TOGGLE_MENU = 'TOGGLE_MENU'
+export const CLOSE_MENU = 'CLOSE_MENU'
+export const SEND_MAIL = 'SEND_MAIL'
+export const CLEAR_ENTRIES = 'CLEAR_ENTRIES'
+export const GET_ENTRIES = 'GET_ENTRIES'
+export const LOAD_ENTRIES = 'LOAD_ENTRIES'

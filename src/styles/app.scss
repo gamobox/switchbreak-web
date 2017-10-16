@@ -1,0 +1,70 @@
+@import 'foundation/index';
+@import 'components/index';
+
+html, body {
+  min-height: 100vh;
+}
+
+html {
+  --color-body-bg: #FCFCFC;
+  --color-body-text: #222;
+  --color-accent: #E0F000;
+  --gutter-width: 5vw;
+  --root-font-size: 15px;
+  --line-height: 1.6;
+  --font-family: 'Maison Neue', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Japanese", sans-serif;
+  --main-max-width: 560px;
+}
+
+body {
+  position: relative;
+  opacity: 1;
+  background: var(--color-body-bg);
+  color: var(--color-body-text);
+  font-family: var(--font-family);
+  font-size: var(--root-font-size);
+  line-height: var(--line-height);
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 320px;
+  transition: opacity 1s ease-in-out;
+  will-change: opacity;
+}
+
+::selection {
+  color: var(--color-body-bg);
+  background: var(--color-body-text);
+}
+
+a {
+  color: var(--color-body-text);
+  text-decoration: none;
+  &:hover {
+    background: $color-accent;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2em;
+}
+
+.button {
+  margin: .5em auto;
+  width: 240px;
+  -webkit-appearance: none;
+  display: block;
+  background: var(--color-accent);
+  color: #FFF;
+  height: 44px;
+  font-size: 24px;
+  line-height: 44px;
+  border: 0;
+  font-family: $font-family-serif;
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+

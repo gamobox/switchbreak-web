@@ -1,0 +1,18 @@
+.entry {
+  margin-bottom: 6rem;
+  img {
+    width: var(--main-max-width);
+    max-width: 100%;
+    display: block;
+  }
+  ol {
+    font-size: 20px;
+    padding-left: 1em;
+    text-indent: .5em;
+  }
+  &__publishDate {
+    display: block;
+    color: #AAAAAA;
+    letter-spacing: .2em;
+  }
+}

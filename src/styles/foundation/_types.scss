@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Maison Neue';
+  font-weight: 700;
+  src: url('./../static/fonts/MaisonNeue-Bold.woff') format('woff'),
+       url('./../static/fonts/MaisonNeue-Bold.woff2') format('woff2'),
+       url('./../static/fonts/MaisonNeue-Bold.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Maison Neue';
+  font-weight: 400;
+  src: url('./../static/fonts/MaisonNeue-Book.woff') format('woff'),
+       url('./../static/fonts/MaisonNeue-Book.woff2') format('woff2'),
+       url('./../static/fonts/MaisonNeue-Book.ttf')  format('truetype');
+}

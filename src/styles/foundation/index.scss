@@ -1,0 +1,9 @@
+@import '_variables';
+@import '_normalize';
+@import '_types';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

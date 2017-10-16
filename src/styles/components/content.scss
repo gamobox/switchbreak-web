@@ -1,0 +1,21 @@
+.content {
+  --main-max-width: 560px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  padding: 15vh 20px;
+  .main {
+    flex: 1 1 100%;
+    max-width: var(--main-max-width);
+  }
+  .sidebar {
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .content {
+    padding: 15vh var(--gutter-width);
+    flex-flow: row;
+    justify-content: space-around;
+  }
+}
