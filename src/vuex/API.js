@@ -1,6 +1,6 @@
 const GITHUB = {
   GISTS: 'https://api.github.com/users/switchbreakinfo/gists',
-  ACCESS_TOKEN: '55f331843255bdc34eab6a1e5a5f719a28dec5c9'
+  ACCESS_TOKEN: '2a1450f24e0a149592c8cb15de2d8fa222d26fd3'
 }
 
 export default {
