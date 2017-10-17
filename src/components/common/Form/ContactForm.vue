@@ -1,8 +1,11 @@
 <template>
-<form action="https://mailthis.to/switchbreakinfo@gmail.com" method="POST"
-  v-on:submit="handleSubmit"
+<form
+  action="https://mailthis.to/switchbreakinfo@gmail.com"
+  method="POST"
   ref="contactForm">
+  <input type="hidden" name="_after" value="https://switchbreak.info/complete">
   <input type="hidden" name="_subject" value="お問い合わせ - switchbreakweb">
+
   <label class="formItem" v-bind:class="{
     'is-focused': focus === 'name',
     'is-invalid': isInvalid('name'),
@@ -20,6 +23,7 @@
       <p>入力内容にエラーがあります。</p>
     </div>
   </label>
+
   <label class="formItem" v-bind:class="{
     'is-focused': focus === 'email',
     'is-invalid': isInvalid('email'),
@@ -37,6 +41,7 @@
       <p>入力内容にエラーがあります。</p>
     </div>
   </label>
+
   <label class="formItem" v-bind:class="{
     'is-focused': focus === 'subject',
     'is-invalid': isInvalid('subject'),
@@ -54,6 +59,7 @@
       <p>入力内容にエラーがあります。</p>
     </div>
   </label>
+
   <label class="formItem" v-bind:class="{
     'is-focused': focus === 'message',
     'is-invalid': isInvalid('message'),
@@ -71,7 +77,8 @@
       <p>入力内容にエラーがあります。</p>
     </div>
   </label>
-  <button class="button" v-bind:disabled="$v.$invalid">SEND</button>
+
+  <button class="button" type="submit" v-bind:disabled="$v.$invalid">SEND</button>
 </form>
 </template>
 
@@ -99,24 +106,6 @@ export default {
   methods: {
     isInvalid(name) {
       return this.$v[name].$dirty && this.$v[name].$invalid
-    },
-    sendData() {
-      const fd = new FormData(this.$refs.contactForm)
-      fetch('https://mailthis.to/switchbreakinfo@gmail.com', {
-        method: 'POST',
-        mode: 'cors',
-        body: fd
-      }).then(res => {
-        if (res.status === 200) {
-          this.$router.push({ name: 'complete' })
-        }
-      })
-    },
-    handleSubmit(evt) {
-      evt.preventDefault()
-      evt.stopPropagation()
-      this.sendData()
-      return false
     }
   }
 }
