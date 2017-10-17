@@ -10,7 +10,7 @@
         <img src="/static/images/avatar/gamo.jpg" alt="gamo">
         <p>
           <a href="https://soundcloud.com/gamobox" target="_new" class="brand-icons">soundcloud</a>
-          <a href="https://soundcloud.com/gamobox" target="_new" class="brand-icons">twitter</a>
+          <a href="https://twitter.com/gamobox" target="_new" class="brand-icons">twitter</a>
         </p>
       </div>
       <div class="member">
@@ -18,7 +18,7 @@
         <img src="/static/images/avatar/sorafka.jpg" alt="sorafka">
         <p>
           <a href="https://soundcloud.com/sorafka" target="_new" class="brand-icons">soundcloud</a>
-          <a href="https://soundcloud.com/ssniwa" target="_new" class="brand-icons">twitter</a>
+          <a href="https://twitter.com/ssniwa" target="_new" class="brand-icons">twitter</a>
         </p>
       </div>
       <div class="member">
@@ -26,7 +26,7 @@
         <img src="/static/images/avatar/mikanima.jpg" alt="mikanima">
         <p>
           <a href="https://soundcloud.com/mikanima" target="_new" class="brand-icons">soundcloud</a>
-          <a href="https://soundcloud.com/mikanima" target="_new" class="brand-icons">twitter</a>
+          <a href="https://twitter.com/mikanima" target="_new" class="brand-icons">twitter</a>
         </p>
       </div>
     </div>
