@@ -8,20 +8,26 @@
       <div class="member">
         <h1>gamo</h1>
         <img src="/static/images/avatar/gamo.jpg" alt="gamo">
-        <p><a href="https://soundcloud.com/gamobox" target="_new">SoundCloud</a></p>
-        <p><a href="https://soundcloud.com/gamobox" target="_new">Twitter</a></p>
+        <p>
+          <a href="https://soundcloud.com/gamobox" target="_new" class="brand-icons">soundcloud</a>
+          <a href="https://soundcloud.com/gamobox" target="_new" class="brand-icons">twitter</a>
+        </p>
       </div>
       <div class="member">
         <h1>sorafka</h1>
         <img src="/static/images/avatar/sorafka.jpg" alt="sorafka">
-        <p><a href="https://soundcloud.com/sorafka" target="_new">SoundCloud</a></p>
-        <p><a href="https://soundcloud.com/ssniwa" target="_new">Twitter</a></p>
+        <p>
+          <a href="https://soundcloud.com/sorafka" target="_new" class="brand-icons">soundcloud</a>
+          <a href="https://soundcloud.com/ssniwa" target="_new" class="brand-icons">twitter</a>
+        </p>
       </div>
       <div class="member">
         <h1>mikanima</h1>
         <img src="/static/images/avatar/mikanima.jpg" alt="mikanima">
-        <p><a href="https://soundcloud.com/mikanima" target="_new">SoundCloud</a></p>
-        <p><a href="https://soundcloud.com/mikanima" target="_new">Twitter</a></p>
+        <p>
+          <a href="https://soundcloud.com/mikanima" target="_new" class="brand-icons">soundcloud</a>
+          <a href="https://soundcloud.com/mikanima" target="_new" class="brand-icons">twitter</a>
+        </p>
       </div>
     </div>
   </div>
@@ -51,7 +57,7 @@ export default {
   flex-flow: row wrap;
   justify-content: space-around;
   .member {
-    margin-right: 1em;
+    margin-right: .75em;
     h1 {
       font-size: 1rem;
     }
@@ -65,6 +71,12 @@ export default {
     p {
       margin-top: .5em;
       margin-bottom: .5em;
+      text-align: center;
+      a {
+        display: inline-block;
+        margin-right: .25em;
+        padding: .25em;
+      }
     }
   }
 }
